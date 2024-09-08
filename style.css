@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+}
+
+p {
+  display: inline;
+}
+
+.p3 {
+  font-size: 1em;
+}
+
+.p2 {
+  font-size: 0.8rem;
+}
+
+hr {
+  margin-top: 1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  height: 1.7rem;
+  width: calc(100% - 1rem);
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+}
+
+input[type="number"] {
+  height: 1.7rem;
+  width: 3.6rem;
+  margin-right: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+button {
+  height: 2rem;
+  margin-bottom: 0.4rem;
+  margin-right: 0.8rem;
+}
+
+.result {
+  font-size: 1rem;
+}
+
+#resultSlownesses,
+#resultVelocity {
+  cursor: pointer;
+}
