@@ -21,7 +21,7 @@ inputSlowness.addEventListener("input", event => {
   var value = parseInt(event.target.value);
   isSlowness = isNum(value);
 
-  resultSlowness.value = isSlowness ? `, ${value + 1}` : "";
+  resultSlowness.textContent = isSlowness ? `, ${value + 1}` : "";
   slowness = value;
 });
 
@@ -120,13 +120,13 @@ function calcVelocity() {
     }
   }
 
-  resultSlownesses.value = slownesses;
-  resultVelocity.value = slownesses.reduce((sum, current) => sum + current, 0) / slownesses.length;
+  resultSlownesses.textContent = slownesses;
+  resultVelocity.textContent = slownesses.reduce((sum, current) => sum + current, 0) / slownesses.length;
 }
 
 [resultSlownesses, resultVelocity].forEach(result => {
   result.addEventListener("click", event => {
-    navigator.clipboard.writeText(event.target.value);
+    navigator.clipboard.writeText(event.target.textContent);
   });
 });
 
